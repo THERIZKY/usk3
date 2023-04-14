@@ -1,0 +1,716 @@
+INFO - 2023-04-06 01:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:09:37 --> Undefined array key "nama_barang"
+in APPPATH\Views\printer\index.php on line 54.
+ 1 APPPATH\Views\printer\index.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_barang"', 'APPPATH\\Views\\printer\\index.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\printer\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('printer/index', [], true)
+ 5 APPPATH\Controllers\Barang.php(24): view('printer/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-04-06 01:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:20:56 --> "login" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 493.
+ 1 SYSTEMPATH\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('produk')
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('produk', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-06 01:36:01 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\codeigniter4\framework\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\Users\\ASUS\\D...', 1735)
+#1 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\codeigniter4\framework\system\Email\Email.php(1735): mail('rizhrizh24@gmai...', '=?UTF-8?Q?Activ...', 'This is a multi...', 'Date: Thu, 6 Ap...', '-f rizhrizh24@g...')
+#2 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\myth\auth\src\Authentication\Activators\EmailActivator.php(32): CodeIgniter\Email\Email->send()
+#5 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\myth\auth\src\Controllers\AuthController.php(185): Myth\Auth\Authentication\Activators\EmailActivator->send(Object(Myth\Auth\Entities\User))
+#6 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\codeigniter4\framework\system\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->attemptRegister()
+#7 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#8 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#11 {main}
+ERROR - 2023-04-06 01:36:01 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-06 01:36:01 --> 
+INFO - 2023-04-06 01:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:47:10 --> Invalid file: "/App/Views/layout/navbar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/App/Views/layout/navbar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/App/Views/layout/navbar', [], true)
+ 3 VENDORPATH\myth\auth\src\Views\layout.php(28): view('/App/Views/layout/navbar')
+ 4 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:47:16 --> Invalid file: "App/Views/layout/navbar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App/Views/layout/navbar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('App/Views/layout/navbar', [], true)
+ 3 VENDORPATH\myth\auth\src\Views\layout.php(28): view('App/Views/layout/navbar')
+ 4 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:47:17 --> Invalid file: "App/Views/layout/navbar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App/Views/layout/navbar.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('App/Views/layout/navbar', [], true)
+ 3 VENDORPATH\myth\auth\src\Views\layout.php(28): view('App/Views/layout/navbar')
+ 4 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:47:59 --> include(App\Views\layout\navbar): Failed to open stream: No such file or directory
+in VENDORPATH\myth\auth\src\Views\layout.php on line 28.
+ 1 VENDORPATH\myth\auth\src\Views\layout.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(App\\Views\\layout\\navbar): Failed to open stream: No such file or directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php', 28)
+ 2 VENDORPATH\myth\auth\src\Views\layout.php(28): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:48:08 --> include(\App\Views\layout\navbar): Failed to open stream: No such file or directory
+in VENDORPATH\myth\auth\src\Views\layout.php on line 28.
+ 1 VENDORPATH\myth\auth\src\Views\layout.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(\\App\\Views\\layout\\navbar): Failed to open stream: No such file or directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php', 28)
+ 2 VENDORPATH\myth\auth\src\Views\layout.php(28): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:48:25 --> include(\App\Views\Layout\navbar): Failed to open stream: No such file or directory
+in VENDORPATH\myth\auth\src\Views\layout.php on line 28.
+ 1 VENDORPATH\myth\auth\src\Views\layout.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(\\App\\Views\\Layout\\navbar): Failed to open stream: No such file or directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php', 28)
+ 2 VENDORPATH\myth\auth\src\Views\layout.php(28): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:48:29 --> include(App\Views\Layout\navbar): Failed to open stream: No such file or directory
+in VENDORPATH\myth\auth\src\Views\layout.php on line 28.
+ 1 VENDORPATH\myth\auth\src\Views\layout.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(App\\Views\\Layout\\navbar): Failed to open stream: No such file or directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php', 28)
+ 2 VENDORPATH\myth\auth\src\Views\layout.php(28): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:48:30 --> include(App\Views\Layout\navbar): Failed to open stream: No such file or directory
+in VENDORPATH\myth\auth\src\Views\layout.php on line 28.
+ 1 VENDORPATH\myth\auth\src\Views\layout.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(App\\Views\\Layout\\navbar): Failed to open stream: No such file or directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php', 28)
+ 2 VENDORPATH\myth\auth\src\Views\layout.php(28): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 01:48:30 --> include(App\Views\Layout\navbar): Failed to open stream: No such file or directory
+in VENDORPATH\myth\auth\src\Views\layout.php on line 28.
+ 1 VENDORPATH\myth\auth\src\Views\layout.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(App\\Views\\Layout\\navbar): Failed to open stream: No such file or directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php', 28)
+ 2 VENDORPATH\myth\auth\src\Views\layout.php(28): include()
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): Myth\Auth\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 01:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 01:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 02:20:42 --> CodeIgniter\Router\RouteCollection::getFilterForRoute(): Return value must be of type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1143.
+ 1 SYSTEMPATH\Router\Router.php(189): CodeIgniter\Router\RouteCollection->getFilterForRoute('produk')
+ 2 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('produk')
+ 3 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 02:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 02:22:18 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('produk', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 02:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 02:48:14 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/produk/mdn-printer-epson-l1210-l-1210-l-1210-penganti-l1110-l-1110-print-only', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 02:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 02:48:16 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 02:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 02:57:22 --> Too few arguments to function CodeIgniter\HTTP\IncomingRequest::getFile(), 0 passed in C:\Users\ASUS\Documents\GitHub\to3-cluster3\testingCluster3\app\Controllers\Barang.php on line 48 and exactly 1 expected
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 934.
+ 1 APPPATH\Controllers\Barang.php(48): CodeIgniter\HTTP\IncomingRequest->getFile()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->save()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 02:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 02:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 03:01:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\detail.php on line 8.
+ 1 APPPATH\Views\admin\detail.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Views\\admin\\detail.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Views\\admin\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/detail', [], true)
+ 5 APPPATH\Controllers\Barang.php(34): view('admin/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->detail('save')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 03:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 03:35:38 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Barang.php(58): CodeIgniter\HTTP\Files\UploadedFile->move('img/', '1680752138_806cdd67d80def1691d6')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->save()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 03:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 03:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 03:54:05 --> unlink(img): Is a directory
+in APPPATH\Controllers\Barang.php on line 121.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img): Is a directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Controllers\\Barang.php', 121)
+ 2 APPPATH\Controllers\Barang.php(121): unlink('img')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->update('20')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+CRITICAL - 2023-04-06 03:54:25 --> unlink(img/): Is a directory
+in APPPATH\Controllers\Barang.php on line 121.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): Is a directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Controllers\\Barang.php', 121)
+ 2 APPPATH\Controllers\Barang.php(121): unlink('img/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->update('20')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+CRITICAL - 2023-04-06 03:59:04 --> unlink(img/): Is a directory
+in APPPATH\Controllers\Barang.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): Is a directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Controllers\\Barang.php', 119)
+ 2 APPPATH\Controllers\Barang.php(119): unlink('img/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->update('20')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 04:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 04:15:55 --> unlink(img/): Is a directory
+in APPPATH\Controllers\Barang.php on line 120.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): Is a directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Controllers\\Barang.php', 120)
+ 2 APPPATH\Controllers\Barang.php(120): unlink('img/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->update('17')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 04:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 04:18:08 --> finfo_file(C:\xampp\tmp\phpC70F.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\phpC70F.tmp): Failed to open stream: No such file or directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\codeigniter4\\framework\\system\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\phpC70F.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\Barang.php(123): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->update('20')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 04:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 04:18:27 --> unlink(img/): Is a directory
+in APPPATH\Controllers\Barang.php on line 120.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/): Is a directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Controllers\\Barang.php', 120)
+ 2 APPPATH\Controllers\Barang.php(120): unlink('img/')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->update('17')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+CRITICAL - 2023-04-06 04:18:36 --> finfo_file(C:\xampp\tmp\php3377.tmp): Failed to open stream: No such file or directory
+in SYSTEMPATH\Files\File.php on line 115.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\xampp\\tmp\\php3377.tmp): Failed to open stream: No such file or directory', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\vendor\\codeigniter4\\framework\\system\\Files\\File.php', 115)
+ 2 SYSTEMPATH\Files\File.php(115): finfo_file(Object(finfo), 'C:\\xampp\\tmp\\php3377.tmp')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(302): CodeIgniter\Files\File->getMimeType()
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(291): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+ 5 SYSTEMPATH\Files\File.php(127): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+ 6 APPPATH\Controllers\Barang.php(123): CodeIgniter\Files\File->getRandomName()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->update('17')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 04:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-06 04:40:49 --> Undefined variable $printer
+in APPPATH\Views\printer\index.php on line 7.
+ 1 APPPATH\Views\printer\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $printer', 'C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Views\\printer\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\app\\Views\\printer\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('printer/index', [], true)
+ 5 APPPATH\Controllers\Pages.php(45): view('printer/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->content()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+CRITICAL - 2023-04-06 04:41:40 --> Call to a member function getPrinter() on null
+in APPPATH\Controllers\Pages.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pages->content()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Documents\\GitHub\\to3-cluster3\\testingCluster3\\public\\index.php')
+INFO - 2023-04-06 04:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-06 04:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

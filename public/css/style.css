@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;700&family=Poppins:ital,wght@0,300;0,700;0,900;1,300;1,700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    font-family: 'Roboto Condensed', 'Fira Sans Condensed', 'Poppins', sans-serif;
+}
+
+p {
+    font-size: medium;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+img {
+    width: 200px;
+}
+
+.form-control textarea {
+    resize: none;
+}
+
+.card-header img {
+    width: 300px;
+    object-fit: cover0;
+}
+
+tbody>tr>* {
+    vertical-align: middle;
+}
+
+.inputNomor {
+    width: 50px;
+    border: 1.6px #333 solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+.form {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #333;
+}
