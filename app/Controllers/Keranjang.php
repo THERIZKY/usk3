@@ -37,12 +37,19 @@ class Keranjang extends BaseController
         $produk = $this->produkModel->getProduk($slug);
         $produkId = $produk['id'];
         $userId = user_id();
+        $jumlah = $this->builder->selectCount('jumlah')->countAllResults();
 
-        $this->keranjangModel->save([
-            'user_id' => $userId,
-            'barang_id' => $produkId,
-            'jumlah' => 1
-        ]);
+        if ($jumlah > 0) {
+            $this->builder->update(['jumlah' => +1], ['barang_id' => $produkId]);
+            // $this->keranjangModel->update($produkId, ['jumlah' => +1]);
+        } else {
+            $this->keranjangModel->save([
+                'user_id' => $userId,
+                'barang_id' => $produkId,
+                'jumlah' => 1
+            ]);
+        }
+
 
         return redirect()->to('/keranjang');
     }
