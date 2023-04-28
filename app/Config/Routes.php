@@ -44,6 +44,8 @@ $routes->get('/keranjang', 'Keranjang::keranjang');
 $routes->get('/keranjang/add/(:any)', 'Keranjang::addKeranjang/$1');
 $routes->get('/keranjang/minus/(:num)', 'Keranjang::minusKeranjang/$1');
 
+/* Halaman Checkout */
+$routes->get('/checkout', 'Checkout::index');
 
 /* Halaman Admin */
 // Untuk Mengatur Produk

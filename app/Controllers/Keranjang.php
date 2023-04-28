@@ -10,11 +10,12 @@ class Keranjang extends BaseController
     protected $produkModel;
     protected $keranjangModel;
     protected $builder;
+    protected $db;
 
     public function __construct()
     {
-        $db      = \Config\Database::connect();
-        $this->builder = $db->table('keranjang');
+        $this->db = \Config\Database::connect();
+        $this->builder = $this->db->table('keranjang');
         $this->keranjangModel = new KeranjangModel();
         $this->produkModel = new produkModel();
     }
@@ -32,16 +33,18 @@ class Keranjang extends BaseController
         return view('keranjang/index', $data);
     }
 
+
     public function addKeranjang($slug)
     {
         $produk = $this->produkModel->getProduk($slug);
         $produkId = $produk['id'];
         $userId = user_id();
-        $jumlah = $this->builder->selectCount('jumlah')->countAllResults();
+        $keranjang = $this->keranjangModel->where(['barang_id' => $produkId, 'user_id' => $userId])->first();
 
-        if ($jumlah > 0) {
-            $this->builder->update(['jumlah' => +1], ['barang_id' => $produkId]);
-            // $this->keranjangModel->update($produkId, ['jumlah' => +1]);
+
+        if ($keranjang) {
+            $newJumlah = $keranjang['jumlah'] + 1;
+            $this->keranjangModel->update($keranjang['id'], ['jumlah' => $newJumlah]);
         } else {
             $this->keranjangModel->save([
                 'user_id' => $userId,
@@ -50,13 +53,20 @@ class Keranjang extends BaseController
             ]);
         }
 
-
         return redirect()->to('/keranjang');
     }
 
-    public function minusKeranjang($id)
+
+    public function minusKeranjang($produkId)
     {
-        $this->builder->delete(['barang_id' => $id]);
+        $keranjang = $this->keranjangModel->where('barang_id', $produkId)->first();
+
+        if ($keranjang['jumlah'] > 1) {
+            $newJumlah = $keranjang['jumlah'] - 1;
+            $this->keranjangModel->update($keranjang['id'], ['jumlah' => $newJumlah]);
+        } else {
+            $this->builder->delete(['barang_id' => $produkId]);
+        }
 
         return redirect()->to('/keranjang');
     }

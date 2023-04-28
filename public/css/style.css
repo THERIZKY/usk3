@@ -9,12 +9,14 @@ p {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
 
+
 img {
     width: 200px;
 }
 
 .form-control textarea {
     resize: none;
+    height: 250px;
 }
 
 .card-header img {

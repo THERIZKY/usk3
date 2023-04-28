@@ -63,7 +63,6 @@ class Barang extends BaseController
             $Filegambar->move('img', $namaGambar);
         }
 
-
         $this->produkModel->save([
             'nama' => $this->request->getVar('nama_produk'),
             'slug' => $slug,

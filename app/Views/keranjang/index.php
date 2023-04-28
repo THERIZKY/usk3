@@ -26,7 +26,6 @@
                                 <?php
                                 $harga = $p['harga'];
                                 echo "Rp. " . number_format($harga, 0, '.', '.');
-
                                 ?>
                             </td>
                             <td>
@@ -37,13 +36,16 @@
                                 <?= $p['jumlah']; ?>
                                 <form class="d-inline" action="/keranjang/minus/<?= $p['id']; ?>">
                                     <?= csrf_field(); ?>
-                                    <button onclick="return confirm('Apakah Anda Yakin Ingin Menghilangkan Barang Dari Keranjang?')" class="btn"><i class="fa-solid fa-minus px-2"></i></button>
+                                    <button onclick="<?php echo $p['jumlah'] > 1 ? "" : "return confirm('Apakah Anda Yakin Ingin Menghilangkan Barang Dari Keranjang?')" ?>" class="btn"><i class="fa-solid fa-minus px-2"></i></button>
                                 </form>
                             </td>
                         </tr>
                     </tbody>
                 <?php endforeach; ?>
             </table>
+            <div class="col text-center">
+                <a href="/checkout" class="btn btn-primary my-3 py-3 px-3">Checkout</a>
+            </div>
         </div>
     </div>
 </div>
