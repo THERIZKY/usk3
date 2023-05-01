@@ -16,7 +16,7 @@ class Auth extends BaseConfig
      *
      * @var string
      */
-    public $defaultUserGroup;
+    public $defaultUserGroup = "users";
 
     /**
      * --------------------------------------------------------------------
@@ -90,6 +90,7 @@ class Auth extends BaseConfig
      * @var string
      */
     public $viewLayout = 'Myth\Auth\Views\layout';
+    // public $viewLayout = 'App\Views\layout';
 
     /**
      * --------------------------------------------------------------------

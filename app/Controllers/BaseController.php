@@ -9,6 +9,15 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
+/* Model Yang Dipakai */
+use App\Models\produkModel;
+use App\Models\keranjangModel;
+use App\Models\TransaksiModel;
+
+/* Config Yang Dipakai */
+use Config\Validation;
+use OutOfRangeException;
+
 /**
  * Class BaseController
  *
@@ -43,6 +52,13 @@ abstract class BaseController extends Controller
      */
     // protected $session;
 
+    /* Proterti Yang Dibutuhkan */
+    protected $builder;
+    protected $db;
+    protected $produkModel;
+    protected $keranjangModel;
+    protected $validation;
+    protected $transaksiModel;
     /**
      * Constructor.
      */
@@ -52,6 +68,21 @@ abstract class BaseController extends Controller
         parent::initController($request, $response, $logger);
 
         // Preload any models, libraries, etc, here.
+
+        /* Inisialisasi Utama */
+
+        // Buat Builder
+        $this->db = \Config\Database::connect();
+        $this->builder = $this->db->table('keranjang');
+
+        // Model
+        $this->keranjangModel = new KeranjangModel();
+        $this->produkModel = new produkModel();
+        $this->transaksiModel = new TransaksiModel();
+
+        /* Inisialisasi Config */
+        $this->validation = new Validation();
+
 
         // E.g.: $this->session = \Config\Services::session();
     }

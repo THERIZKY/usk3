@@ -18,14 +18,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/produk">Produk</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/keranjang">keranjang</a>
+                </li>
             </ul>
             <?php if (in_groups("admin")) : ?>
                 <a href="/admin" class="nav-link mx-4"><i class="fa-solid fa-lock"></i> Dashboard Admin</a>
             <?php endif; ?>
             <?php if (logged_in()) : ?>
-                <a href="/logout" class="nav-link"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                <a href="/transaksi" class="nav-link mx-1">Transaksi Anda</a>
+                <a href="/logout" class="nav-link mx-4"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
             <?php else : ?>
-                <a href="/login" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                <a href="/login" class="nav-link mx-4"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
             <?php endif; ?>
         </div>
     </div>

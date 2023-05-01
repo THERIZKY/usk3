@@ -2,7 +2,7 @@
 
 use Myth\Auth\Entities\User;
 
-if (! function_exists('logged_in')) {
+if (!function_exists('logged_in')) {
     /**
      * Checks to see if the user is logged in.
      *
@@ -14,7 +14,7 @@ if (! function_exists('logged_in')) {
     }
 }
 
-if (! function_exists('user')) {
+if (!function_exists('user')) {
     /**
      * Returns the User instance for the current logged in user.
      *
@@ -29,7 +29,7 @@ if (! function_exists('user')) {
     }
 }
 
-if (! function_exists('user_id')) {
+if (!function_exists('user_id')) {
     /**
      * Returns the User ID for the current logged in user.
      *
@@ -44,7 +44,7 @@ if (! function_exists('user_id')) {
     }
 }
 
-if (! function_exists('in_groups')) {
+if (!function_exists('in_groups')) {
     /**
      * Ensures that the current user is in at least one of the passed in
      * groups. The groups can be passed in as either ID's or group names.
@@ -71,7 +71,7 @@ if (! function_exists('in_groups')) {
     }
 }
 
-if (! function_exists('has_permission')) {
+if (!function_exists('has_permission')) {
     /**
      * Ensures that the current user has the passed in permission.
      * The permission can be passed in either as an ID or name.

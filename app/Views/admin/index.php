@@ -13,40 +13,6 @@
                 </div>
             <?php endif; ?>
             <a href="/admin/produk/tambah" class="btn btn-primary my-3">Tambah Data</a>
-            <!-- <table class="table table-striped table-hover">
-                <thead>
-                    <tr class="text-center">
-                        <th scope="col">#</th>
-                        <th scope="col">Gambar</th>
-                        <th scope="col">Nama Printer</th>
-                        <th scope="col">Deskripsi</th>
-                        <th scope="col">Harga</th>
-                        <th scope="col">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php $i = 1; ?>
-                    <?php foreach ($printer as $p) : ?>
-                        <tr>
-                            <th scope="row"><?= $i++; ?></th>
-                            <td class="col-2"><img src="/img/<?= $p['gambar']; ?>" alt=""></td>
-                            <td class="col-2"><?= $p['nama']; ?></td>
-                            <td>
-                                <p><?= $p['deskripsi']; ?></p>
-                            </td>
-                            <td class="col-2 text-center">
-                                <?php
-                                $harga = (int) $p['harga'];
-                                echo "Rp. " . number_format($harga, 0, '.', '.');
-                                ?>
-                            </td>
-                            <td class="text-center">
-                                <a href="/produk/<?= $p['slug']; ?>" class="btn btn-primary">Details</a>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table> -->
             <div class="d-flex flex-wrap gap-5 mb-5 mt-2">
                 <?php foreach ($printer as $p) : ?>
                     <div class="card py-4" style="width: 18rem;">

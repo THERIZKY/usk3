@@ -13,8 +13,10 @@
                     <div class="row justify-content-md-center mt-3">
                         <div class="col-6 mx-3">
                             <form class="m-3" action="/keranjang/add/<?= $printer['slug']; ?>">
-                                <?php if (logged_in()) : ?>
+                                <?php if (logged_in() && in_groups("users")) : ?>
                                     <button class="btn btn-success">Masukan Keranjang</button>
+                                <?php elseif (in_groups("admin")) : ?>
+                                    <a href="/admin" class="btn btn-warning">Admin Tidak Dapat Memesan</a>
                                 <?php else : ?>
                                     <a href="/login" class="btn btn-danger">Harap Login Terlebih Dahulu</a>
                                 <?php endif; ?>

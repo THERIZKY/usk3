@@ -24,7 +24,7 @@
                             <td><?= $p['deskripsi']; ?></td>
                             <td>
                                 <?php
-                                $harga = $p['harga'];
+                                $harga = $p['harga'] * $p['jumlah'];
                                 echo "Rp. " . number_format($harga, 0, '.', '.');
                                 ?>
                             </td>
@@ -44,7 +44,7 @@
                 <?php endforeach; ?>
             </table>
             <div class="col text-center">
-                <a href="/checkout" class="btn btn-primary my-3 py-3 px-3">Checkout</a>
+                <a href="/checkout" class="btn btn-primary my-3 py-2d px-5">Checkout</a>
             </div>
         </div>
     </div>

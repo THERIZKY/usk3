@@ -2,23 +2,8 @@
 
 namespace App\Controllers;
 
-use App\Models\produkModel;
-use App\Models\KeranjangModel;
-
 class Users extends BaseController
 {
-    protected $produkModel;
-    protected $keranjangModel;
-    protected $builder;
-
-    public function __construct()
-    {
-        $db      = \Config\Database::connect();
-        $this->builder = $db->table('keranjang');
-        $this->keranjangModel = new KeranjangModel();
-        $this->produkModel = new produkModel();
-    }
-
     public function content()
     {
         $printer = $this->produkModel->getProduk();

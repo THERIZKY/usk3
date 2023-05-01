@@ -2,16 +2,8 @@
 
 namespace App\Controllers;
 
-use App\Models\produkModel;
-
 class Pages extends BaseController
 {
-    protected $produkModel;
-
-    public function __construct()
-    {
-        $this->produkModel = new produkModel();
-    }
     public function index()
     {
         $produk = $this->produkModel->getProduk();

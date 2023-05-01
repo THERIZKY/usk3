@@ -36,28 +36,35 @@ $routes->get('/about', 'Pages::about');
 $routes->get('/contact', 'Pages::contact');
 
 /* Halaman Users */
-$routes->get('/produk', 'Users::content');
-$routes->get('/produk/(:any)', 'Users::detail/$1');
+$routes->get('/produk', 'Users::content', ['filter' => 'login']);
+$routes->get('/produk/(:any)', 'Users::detail/$1', ['filter' => 'login']);
+$routes->get('/transaksi', 'Transaksi::index', ['filter' => 'login']);
+
 
 /* Halaman Keranjang */
-$routes->get('/keranjang', 'Keranjang::keranjang');
-$routes->get('/keranjang/add/(:any)', 'Keranjang::addKeranjang/$1');
-$routes->get('/keranjang/minus/(:num)', 'Keranjang::minusKeranjang/$1');
+$routes->get('/keranjang', 'Keranjang::keranjang', ['filter' => 'login']);
+$routes->get('/keranjang/add/(:any)', 'Keranjang::addKeranjang/$1', ['filter' => 'login']);
+$routes->get('/keranjang/minus/(:num)', 'Keranjang::minusKeranjang/$1', ['filter' => 'login']);
 
 /* Halaman Checkout */
-$routes->get('/checkout', 'Checkout::index');
+$routes->get('/checkout', 'Checkout::index', ['filter' => 'login']);
 
 /* Halaman Admin */
 // Untuk Mengatur Produk
-$routes->get('/admin', 'Barang::index', ['filter' => 'role:admin']);
-$routes->get('/admin/produk/tambah', 'Barang::tambah', ['filter' => 'role:admin']);
-$routes->get('/admin/produk/edit/(:segment)', 'Barang::edit/$1', ['filter' => 'role:admin']);
-$routes->delete('/admin/produk/(:num)', 'Barang::hapus/$1', ['filter' => 'role:admin']);
-$routes->get('/admin/produk/(:any)', 'Barang::detail/$1', ['filter' => 'role:admin']);
+
+$routes->get('/admin', 'Admin::index', ['filter' => 'role:admin', 'login']);
+$routes->get('/admin/produk/tambah', 'Admin::tambah', ['filter' => 'role:admin', 'login']);
+$routes->get('/admin/produk/edit/(:segment)', 'Admin::edit/$1', ['filter' => 'role:admin', 'login']);
+$routes->delete('/admin/produk/(:num)', 'Admin::hapus/$1');
+$routes->get('/admin/produk/(:any)', 'Admin::detail/$1', ['filter' => 'role:admin', 'login']);
 
 // Untuk form
-$routes->post('/admin/produk/save', 'Barang::save');
-$routes->post('/admin/produk/update/(:num)', 'Barang::update/$1');
+$routes->post('/admin/produk/save', 'Admin::save',  ['filter' => 'role:admin', 'login']);
+$routes->post('/admin/produk/update/(:num)', 'Admin::update/$1',  ['filter' => 'role:admin', 'login']);
+$routes->post('/checkout/done', 'Checkout::transaction');
+
+
+/* Routes Test Buat Groups */
 
 
 // /* Routes Buat Testing View */
