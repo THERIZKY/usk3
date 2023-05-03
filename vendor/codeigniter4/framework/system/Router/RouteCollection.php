@@ -318,7 +318,7 @@ class RouteCollection implements RouteCollectionInterface
      */
     public function addPlaceholder($placeholder, ?string $pattern = null): RouteCollectionInterface
     {
-        if (! is_array($placeholder)) {
+        if (!is_array($placeholder)) {
             $placeholder = [$placeholder => $pattern];
         }
 
@@ -1075,7 +1075,7 @@ class RouteCollection implements RouteCollectionInterface
                 $to   = $route['route'][$from];
 
                 // ignore closures
-                if (! is_string($to)) {
+                if (!is_string($to)) {
                     continue;
                 }
 
@@ -1162,7 +1162,7 @@ class RouteCollection implements RouteCollectionInterface
     {
         $options = $this->loadRoutesOptions($verb);
 
-        if (! array_key_exists($search, $options) || ! array_key_exists('filter', $options[$search])) {
+        if (!array_key_exists($search, $options) || !array_key_exists('filter', $options[$search])) {
             return [];
         }
 
@@ -1192,7 +1192,7 @@ class RouteCollection implements RouteCollectionInterface
         // Build our resulting string, inserting the $params in
         // the appropriate places.
         foreach ($matches[0] as $index => $pattern) {
-            if (! preg_match('#^' . $pattern . '$#u', $params[$index])) {
+            if (!preg_match('#^' . $pattern . '$#u', $params[$index])) {
                 throw RouterException::forInvalidParameterType();
             }
 
@@ -1237,7 +1237,7 @@ class RouteCollection implements RouteCollectionInterface
         // Build our resulting string, inserting the $params in
         // the appropriate places.
         foreach ($matches[0] as $index => $pattern) {
-            if (! preg_match('#^' . $pattern . '$#u', $params[$index])) {
+            if (!preg_match('#^' . $pattern . '$#u', $params[$index])) {
                 throw RouterException::forInvalidParameterType();
             }
 
@@ -1265,7 +1265,7 @@ class RouteCollection implements RouteCollectionInterface
         if ($locale !== null) {
             /** @var App $config */
             $config = config('App');
-            if (! in_array($locale, $config->supportedLocales, true)) {
+            if (!in_array($locale, $config->supportedLocales, true)) {
                 $locale = null;
             }
         }
@@ -1314,19 +1314,19 @@ class RouteCollection implements RouteCollectionInterface
         }
 
         // Hostname limiting?
-        if (! empty($options['hostname'])) {
+        if (!empty($options['hostname'])) {
             // @todo determine if there's a way to whitelist hosts?
-            if (! $this->checkHostname($options['hostname'])) {
+            if (!$this->checkHostname($options['hostname'])) {
                 return;
             }
 
             $overwrite = true;
         }
         // Limiting to subdomains?
-        elseif (! empty($options['subdomain'])) {
+        elseif (!empty($options['subdomain'])) {
             // If we don't match the current subdomain, then
             // we don't need to add the route.
-            if (! $this->checkSubdomains($options['subdomain'])) {
+            if (!$this->checkSubdomains($options['subdomain'])) {
                 return;
             }
 
@@ -1357,7 +1357,7 @@ class RouteCollection implements RouteCollectionInterface
         }
 
         // If is redirect, No processing
-        if (! isset($options['redirect']) && is_string($to)) {
+        if (!isset($options['redirect']) && is_string($to)) {
             // If no namespace found, add the default namespace
             if (strpos($to, '\\') === false || strpos($to, '\\') > 0) {
                 $namespace = $options['namespace'] ?? $this->defaultNamespace;
@@ -1378,7 +1378,7 @@ class RouteCollection implements RouteCollectionInterface
         // this works only because discovered routes are added just prior
         // to attempting to route the request.
         $fromExists = dot_array_search('*.route.' . $from, $this->routes[$verb] ?? []) !== null;
-        if ((isset($this->routes[$verb][$name]) || $fromExists) && ! $overwrite) {
+        if ((isset($this->routes[$verb][$name]) || $fromExists) && !$overwrite) {
             return;
         }
 
@@ -1403,7 +1403,7 @@ class RouteCollection implements RouteCollectionInterface
     private function checkHostname($hostname): bool
     {
         // CLI calls can't be on hostname.
-        if (! isset($this->httpHost)) {
+        if (!isset($this->httpHost)) {
             return false;
         }
 
@@ -1460,7 +1460,7 @@ class RouteCollection implements RouteCollectionInterface
     private function checkSubdomains($subdomains): bool
     {
         // CLI calls can't be on subdomain.
-        if (! isset($this->httpHost)) {
+        if (!isset($this->httpHost)) {
             return false;
         }
 
@@ -1468,13 +1468,13 @@ class RouteCollection implements RouteCollectionInterface
             $this->currentSubdomain = $this->determineCurrentSubdomain();
         }
 
-        if (! is_array($subdomains)) {
+        if (!is_array($subdomains)) {
             $subdomains = [$subdomains];
         }
 
         // Routes can be limited to any sub-domain. In that case, though,
         // it does require a sub-domain to be present.
-        if (! empty($this->currentSubdomain) && in_array('*', $subdomains, true)) {
+        if (!empty($this->currentSubdomain) && in_array('*', $subdomains, true)) {
             return true;
         }
 
@@ -1631,7 +1631,7 @@ class RouteCollection implements RouteCollectionInterface
      */
     private function getControllerName($handler)
     {
-        if (! is_string($handler)) {
+        if (!is_string($handler)) {
             return null;
         }
 

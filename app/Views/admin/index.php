@@ -14,7 +14,7 @@
             <?php endif; ?>
             <a href="/admin/produk/tambah" class="btn btn-primary my-3">Tambah Data</a>
             <div class="d-flex flex-wrap gap-5 mb-5 mt-2">
-                <?php foreach ($printer as $p) : ?>
+                <?php foreach ($produk as $p) : ?>
                     <div class="card py-4" style="width: 18rem;">
                         <img src="/img/<?= $p['gambar']; ?>" class="card-img-top" alt="...">
                         <div class="card-body">

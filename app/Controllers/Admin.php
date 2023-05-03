@@ -7,29 +7,57 @@ class Admin extends BaseController
 {
     public function index()
     {
-        $printer = $this->produkModel->getProduk();
+        $produk = $this->produkModel->getProduk();
         $data = [
-            'title' => 'Daftar Produk || Rizhura Computer',
-            'printer' => $printer
+            'title' => 'Daftar Produk || Rizhura Cafe',
+            'produk' => $produk
         ];
         return view('admin/index', $data);
     }
     public function detail($slug)
     {
-        $printer = $this->produkModel->getProduk($slug);
+        $produk = $this->produkModel->getProduk($slug);
         $data = [
-            'title' => 'Detail Produk || Rizhura Computer',
-            'printer' => $printer
+            'title' => 'Detail Produk || Rizhura Cafe',
+            'produk' => $produk
         ];
 
         return view('admin/detail', $data);
     }
 
+    /* Method Yang Berurusan Dengan Transaksi */
+    public function AllTransaksi()
+    {
+        $transaksi = $this->transaksiModel->findAll();
+        $data = [
+            'title' => 'List Transaksi || Rizhura Cafe',
+            'transaksi' => $transaksi
+        ];
+
+        return view('admin/accTransaksi/transaksiAdmin', $data);
+    }
+
+    public function ChangeStatus($idTransaksi)
+    {
+        $newStatus  = $this->request->getPost('status_pemesanan');
+        if (empty($newStatus)) {
+            $status_pemesanan = $this->request->getPost('oldStatus');
+        } else {
+            $status_pemesanan = $newStatus;
+        }
+        $this->transaksiModel->update($idTransaksi, ['status_pemesanan' => $status_pemesanan]);
+
+        session()->setFlashdata('pesan', 'Status Pemesanan Berhasil Dirubah');
+        return redirect()->to('/admin/AllTransaksi');
+    }
+
+
+
     /* Method Tambah Data */
     public function tambah()
     {
         $data = [
-            'title' => 'Tambah Produk || Rizhura Computer'
+            'title' => 'Tambah Produk || Rizhura Cafe'
         ];
         return view('admin/tambah', $data);
     }
@@ -83,7 +111,7 @@ class Admin extends BaseController
     public function edit($slug)
     {
         $data = [
-            'title' => 'Ubah Data Produk || Rizhura Computer',
+            'title' => 'Ubah Data Produk || Rizhura Cafe',
             'produk' => $this->produkModel->getProduk($slug)
         ];
 

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Waktu pembuatan: 03 Bulan Mei 2023 pada 08.00
+- Versi server: 10.4.27-MariaDB
+- Versi PHP: 8.2.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="usk3" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="auth_activation_attempts">
+                CREATE TABLE `auth_activation_attempts` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `ip_address` varchar(255) NOT NULL,
+                  `user_agent` varchar(255) NOT NULL,
+                  `token` varchar(255) DEFAULT NULL,
+                  `created_at` datetime NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="auth_groups">
+                CREATE TABLE `auth_groups` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) NOT NULL,
+                  `description` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="auth_groups_permissions">
+                CREATE TABLE `auth_groups_permissions` (
+                  `group_id` int(11) unsigned NOT NULL DEFAULT 0,
+                  `permission_id` int(11) unsigned NOT NULL DEFAULT 0,
+                  KEY `auth_groups_permissions_permission_id_foreign` (`permission_id`),
+                  KEY `group_id_permission_id` (`group_id`,`permission_id`),
+                  CONSTRAINT `auth_groups_permissions_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`) ON DELETE CASCADE,
+                  CONSTRAINT `auth_groups_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `auth_permissions` (`id`) ON DELETE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="auth_groups_users">
+                CREATE TABLE `auth_groups_users` (
+                  `group_id` int(11) unsigned NOT NULL DEFAULT 0,
+                  `user_id` int(11) unsigned NOT NULL DEFAULT 0,
+                  KEY `auth_groups_users_user_id_foreign` (`user_id`),
+                  KEY `group_id_user_id` (`group_id`,`user_id`),
+                  CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`) ON DELETE CASCADE,
+                  CONSTRAINT `auth_groups_users_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="auth_logins">
+                CREATE TABLE `auth_logins` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `ip_address` varchar(255) DEFAULT NULL,
+                  `email` varchar(255) DEFAULT NULL,
+                  `user_id` int(11) unsigned DEFAULT NULL,
+                  `date` datetime NOT NULL,
+                  `success` tinyint(1) NOT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `email` (`email`),
+                  KEY `user_id` (`user_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="auth_permissions">
+                CREATE TABLE `auth_permissions` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `name` varchar(255) NOT NULL,
+                  `description` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="auth_reset_attempts">
+                CREATE TABLE `auth_reset_attempts` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `email` varchar(255) NOT NULL,
+                  `ip_address` varchar(255) NOT NULL,
+                  `user_agent` varchar(255) NOT NULL,
+                  `token` varchar(255) DEFAULT NULL,
+                  `created_at` datetime NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="auth_tokens">
+                CREATE TABLE `auth_tokens` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `selector` varchar(255) NOT NULL,
+                  `hashedValidator` varchar(255) NOT NULL,
+                  `user_id` int(11) unsigned NOT NULL,
+                  `expires` datetime NOT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `auth_tokens_user_id_foreign` (`user_id`),
+                  KEY `selector` (`selector`),
+                  CONSTRAINT `auth_tokens_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="auth_users_permissions">
+                CREATE TABLE `auth_users_permissions` (
+                  `user_id` int(11) unsigned NOT NULL DEFAULT 0,
+                  `permission_id` int(11) unsigned NOT NULL DEFAULT 0,
+                  KEY `auth_users_permissions_permission_id_foreign` (`permission_id`),
+                  KEY `user_id_permission_id` (`user_id`,`permission_id`),
+                  CONSTRAINT `auth_users_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `auth_permissions` (`id`) ON DELETE CASCADE,
+                  CONSTRAINT `auth_users_permissions_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="keranjang">
+                CREATE TABLE `keranjang` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `user_id` int(11) NOT NULL,
+                  `barang_id` int(11) NOT NULL,
+                  `jumlah` int(144) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="migrations">
+                CREATE TABLE `migrations` (
+                  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+                  `version` varchar(255) NOT NULL,
+                  `class` varchar(255) NOT NULL,
+                  `group` varchar(255) NOT NULL,
+                  `namespace` varchar(255) NOT NULL,
+                  `time` int(11) NOT NULL,
+                  `batch` int(11) unsigned NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                  `email` varchar(255) NOT NULL,
+                  `username` varchar(30) DEFAULT NULL,
+                  `password_hash` varchar(255) NOT NULL,
+                  `reset_hash` varchar(255) DEFAULT NULL,
+                  `reset_at` datetime DEFAULT NULL,
+                  `reset_expires` datetime DEFAULT NULL,
+                  `activate_hash` varchar(255) DEFAULT NULL,
+                  `status` varchar(255) DEFAULT NULL,
+                  `status_message` varchar(255) DEFAULT NULL,
+                  `active` tinyint(1) NOT NULL DEFAULT 0,
+                  `force_pass_reset` tinyint(1) NOT NULL DEFAULT 0,
+                  `created_at` datetime DEFAULT NULL,
+                  `updated_at` datetime DEFAULT NULL,
+                  `deleted_at` datetime DEFAULT NULL,
+                  PRIMARY KEY (`id`),
+                  UNIQUE KEY `email` (`email`),
+                  UNIQUE KEY `username` (`username`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'usk3'
+    -->
+    <database name="usk3">
+        <!-- Tabel auth_activation_attempts -->
+        <!-- Tabel auth_groups -->
+        <table name="auth_groups">
+            <column name="id">1</column>
+            <column name="name">admin</column>
+            <column name="description">Seorang admin yang berhak mengatur keseluruhan web</column>
+        </table>
+        <table name="auth_groups">
+            <column name="id">2</column>
+            <column name="name">users</column>
+            <column name="description">pengguna yang hanya bisa menggunakan beberapa fitur dari web</column>
+        </table>
+        <!-- Tabel auth_groups_permissions -->
+        <!-- Tabel auth_groups_users -->
+        <table name="auth_groups_users">
+            <column name="group_id">1</column>
+            <column name="user_id">2</column>
+        </table>
+        <table name="auth_groups_users">
+            <column name="group_id">2</column>
+            <column name="user_id">5</column>
+        </table>
+        <!-- Tabel auth_logins -->
+        <table name="auth_logins">
+            <column name="id">1</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">NULL</column>
+            <column name="date">2023-04-06 01:38:14</column>
+            <column name="success">0</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">2</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-06 01:38:34</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">3</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-06 01:40:22</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">4</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-06 02:04:58</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">5</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-06 02:21:27</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">6</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">3</column>
+            <column name="date">2023-04-06 02:29:57</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">7</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-06 02:48:29</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">8</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-12 03:24:26</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">9</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-13 01:34:50</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">10</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">NULL</column>
+            <column name="date">2023-04-13 01:37:21</column>
+            <column name="success">0</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">11</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">NULL</column>
+            <column name="date">2023-04-13 01:37:49</column>
+            <column name="success">0</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">12</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">NULL</column>
+            <column name="date">2023-04-13 01:37:55</column>
+            <column name="success">0</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">13</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zokecoy@gmail.com</column>
+            <column name="user_id">4</column>
+            <column name="date">2023-04-13 01:38:15</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">14</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zokecoy@gmail.com</column>
+            <column name="user_id">4</column>
+            <column name="date">2023-04-13 01:38:41</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">15</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-13 02:00:04</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">16</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">NULL</column>
+            <column name="date">2023-04-13 02:18:31</column>
+            <column name="success">0</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">17</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-13 02:18:52</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">18</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-13 03:21:11</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">19</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-04-13 03:26:20</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">20</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-05-02 02:30:57</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">21</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">NULL</column>
+            <column name="date">2023-05-03 01:26:37</column>
+            <column name="success">0</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">22</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">5</column>
+            <column name="date">2023-05-03 01:27:11</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">23</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-05-03 01:28:00</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">24</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">5</column>
+            <column name="date">2023-05-03 01:45:17</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">25</column>
+            <column name="ip_address">::1</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="user_id">2</column>
+            <column name="date">2023-05-03 01:45:44</column>
+            <column name="success">1</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">26</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">NULL</column>
+            <column name="date">2023-05-03 02:54:44</column>
+            <column name="success">0</column>
+        </table>
+        <table name="auth_logins">
+            <column name="id">27</column>
+            <column name="ip_address">::1</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="user_id">5</column>
+            <column name="date">2023-05-03 02:54:50</column>
+            <column name="success">1</column>
+        </table>
+        <!-- Tabel auth_permissions -->
+        <!-- Tabel auth_reset_attempts -->
+        <!-- Tabel auth_tokens -->
+        <!-- Tabel auth_users_permissions -->
+        <!-- Tabel keranjang -->
+        <table name="keranjang">
+            <column name="id">1</column>
+            <column name="user_id">2</column>
+            <column name="barang_id">1</column>
+            <column name="jumlah">0</column>
+        </table>
+        <table name="keranjang">
+            <column name="id">2</column>
+            <column name="user_id">2</column>
+            <column name="barang_id">1</column>
+            <column name="jumlah">0</column>
+        </table>
+        <table name="keranjang">
+            <column name="id">3</column>
+            <column name="user_id">2</column>
+            <column name="barang_id">1</column>
+            <column name="jumlah">0</column>
+        </table>
+        <table name="keranjang">
+            <column name="id">4</column>
+            <column name="user_id">2</column>
+            <column name="barang_id">6</column>
+            <column name="jumlah">1</column>
+        </table>
+        <table name="keranjang">
+            <column name="id">5</column>
+            <column name="user_id">2</column>
+            <column name="barang_id">17</column>
+            <column name="jumlah">1</column>
+        </table>
+        <table name="keranjang">
+            <column name="id">6</column>
+            <column name="user_id">1</column>
+            <column name="barang_id">17</column>
+            <column name="jumlah">1</column>
+        </table>
+        <table name="keranjang">
+            <column name="id">7</column>
+            <column name="user_id">1</column>
+            <column name="barang_id">6</column>
+            <column name="jumlah">1</column>
+        </table>
+        <table name="keranjang">
+            <column name="id">8</column>
+            <column name="user_id">2</column>
+            <column name="barang_id">27</column>
+            <column name="jumlah">1</column>
+        </table>
+        <table name="keranjang">
+            <column name="id">10</column>
+            <column name="user_id">5</column>
+            <column name="barang_id">28</column>
+            <column name="jumlah">1</column>
+        </table>
+        <!-- Tabel migrations -->
+        <table name="migrations">
+            <column name="id">1</column>
+            <column name="version">2017-11-20-223112</column>
+            <column name="class">Myth\Auth\Database\Migrations\CreateAuthTables</column>
+            <column name="group">default</column>
+            <column name="namespace">Myth\Auth</column>
+            <column name="time">1680743938</column>
+            <column name="batch">1</column>
+        </table>
+        <!-- Tabel users -->
+        <table name="users">
+            <column name="id">2</column>
+            <column name="email">rizhrizh24@gmail.com</column>
+            <column name="username">Rizh Rizh</column>
+            <column name="password_hash">$2y$10$czrq.2voySfgO1gkn33xle3BUhigk/lu4kQr0ETGcoZQkAFvZpExK</column>
+            <column name="reset_hash">NULL</column>
+            <column name="reset_at">NULL</column>
+            <column name="reset_expires">NULL</column>
+            <column name="activate_hash">NULL</column>
+            <column name="status">NULL</column>
+            <column name="status_message">NULL</column>
+            <column name="active">1</column>
+            <column name="force_pass_reset">0</column>
+            <column name="created_at">2023-04-06 01:38:27</column>
+            <column name="updated_at">2023-04-06 01:38:27</column>
+            <column name="deleted_at">NULL</column>
+        </table>
+        <table name="users">
+            <column name="id">5</column>
+            <column name="email">zoke@gmail.com</column>
+            <column name="username">Zokecoy</column>
+            <column name="password_hash">$2y$10$gVsi9Xi5wHOoH93Rmb7eDevbzF5Jrvu/WRhe4z.K8QQ9mCTCzZKtu</column>
+            <column name="reset_hash">NULL</column>
+            <column name="reset_at">NULL</column>
+            <column name="reset_expires">NULL</column>
+            <column name="activate_hash">NULL</column>
+            <column name="status">NULL</column>
+            <column name="status_message">NULL</column>
+            <column name="active">1</column>
+            <column name="force_pass_reset">0</column>
+            <column name="created_at">2023-05-03 01:27:03</column>
+            <column name="updated_at">2023-05-03 01:27:03</column>
+            <column name="deleted_at">NULL</column>
+        </table>
+    </database>
+</pma_xml_export>

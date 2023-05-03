@@ -23,13 +23,16 @@
                 </li>
             </ul>
             <?php if (in_groups("admin")) : ?>
-                <a href="/admin" class="nav-link mx-4"><i class="fa-solid fa-lock"></i> Dashboard Admin</a>
+                <a href="/admin" class="nav-link mx-3"><i class="fa-solid fa-lock"></i> Dashboard Admin</a>
+                <a href="/admin/AllTransaksi" class="nav-link mx-3">List Transaksi</a>
             <?php endif; ?>
             <?php if (logged_in()) : ?>
-                <a href="/transaksi" class="nav-link mx-1">Transaksi Anda</a>
+                <?php if (in_groups("users")) : ?>
+                    <a href="/transaksi" class="nav-link mx-1">Transaksi Anda</a>
+                <?php endif; ?>
                 <a href="/logout" class="nav-link mx-4"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
             <?php else : ?>
-                <a href="/login" class="nav-link mx-4"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                <a href="/login" class="nav-link mx-3"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
             <?php endif; ?>
         </div>
     </div>

@@ -6,10 +6,10 @@ class Users extends BaseController
 {
     public function content()
     {
-        $printer = $this->produkModel->getProduk();
+        $produk = $this->produkModel->getProduk();
         $data = [
             'title' => 'Daftar Product',
-            'printer' => $printer
+            'produk' => $produk
         ];
 
         return view('printer/index', $data);
@@ -17,10 +17,10 @@ class Users extends BaseController
 
     public function detail($slug)
     {
-        $printer = $this->produkModel->getProduk($slug);
+        $produk = $this->produkModel->getProduk($slug);
         $data = [
             'title' => 'Detail Produk || Rizhura Computer',
-            'printer' => $printer
+            'produk' => $produk
         ];
 
         return view('printer/detail', $data);

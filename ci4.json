@@ -1,99 +1,398 @@
 [
-{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
-{"type":"database","name":"ci4"},
-{"type":"table","name":"auth_activation_attempts","database":"ci4","data":
-[
-
-]
-}
-,{"type":"table","name":"auth_groups","database":"ci4","data":
-[
-{"id":"1","name":"admin","description":"Seorang admin yang berhak mengatur keseluruhan web"},
-{"id":"2","name":"users","description":"pengguna yang hanya bisa menggunakan beberapa fitur dari web"}
-]
-}
-,{"type":"table","name":"auth_groups_permissions","database":"ci4","data":
-[
-
-]
-}
-,{"type":"table","name":"auth_groups_users","database":"ci4","data":
-[
-{"group_id":"1","user_id":"2"},
-{"group_id":"2","user_id":"3"}
-]
-}
-,{"type":"table","name":"auth_logins","database":"ci4","data":
-[
-{"id":"1","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":null,"date":"2023-04-06 01:38:14","success":"0"},
-{"id":"2","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-06 01:38:34","success":"1"},
-{"id":"3","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-06 01:40:22","success":"1"},
-{"id":"4","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-06 02:04:58","success":"1"},
-{"id":"5","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-06 02:21:27","success":"1"},
-{"id":"6","ip_address":"::1","email":"zoke@gmail.com","user_id":"3","date":"2023-04-06 02:29:57","success":"1"},
-{"id":"7","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-06 02:48:29","success":"1"},
-{"id":"8","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-12 03:24:26","success":"1"},
-{"id":"9","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-13 01:34:50","success":"1"},
-{"id":"10","ip_address":"::1","email":"zoke@gmail.com","user_id":null,"date":"2023-04-13 01:37:21","success":"0"},
-{"id":"11","ip_address":"::1","email":"zoke@gmail.com","user_id":null,"date":"2023-04-13 01:37:49","success":"0"},
-{"id":"12","ip_address":"::1","email":"zoke@gmail.com","user_id":null,"date":"2023-04-13 01:37:55","success":"0"},
-{"id":"13","ip_address":"::1","email":"zokecoy@gmail.com","user_id":"4","date":"2023-04-13 01:38:15","success":"1"},
-{"id":"14","ip_address":"::1","email":"zokecoy@gmail.com","user_id":"4","date":"2023-04-13 01:38:41","success":"1"},
-{"id":"15","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-13 02:00:04","success":"1"},
-{"id":"16","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":null,"date":"2023-04-13 02:18:31","success":"0"},
-{"id":"17","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-13 02:18:52","success":"1"},
-{"id":"18","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-13 03:21:11","success":"1"},
-{"id":"19","ip_address":"::1","email":"rizhrizh24@gmail.com","user_id":"2","date":"2023-04-13 03:26:20","success":"1"}
-]
-}
-,{"type":"table","name":"auth_permissions","database":"ci4","data":
-[
-
-]
-}
-,{"type":"table","name":"auth_reset_attempts","database":"ci4","data":
-[
-
-]
-}
-,{"type":"table","name":"auth_tokens","database":"ci4","data":
-[
-
-]
-}
-,{"type":"table","name":"auth_users_permissions","database":"ci4","data":
-[
-
-]
-}
-,{"type":"table","name":"keranjang","database":"ci4","data":
-[
-{"id":"1","user_id":"2","barang_id":"1","jumlah":"0"},
-{"id":"2","user_id":"2","barang_id":"1","jumlah":"0"},
-{"id":"3","user_id":"2","barang_id":"1","jumlah":"0"},
-{"id":"4","user_id":"2","barang_id":"6","jumlah":"1"},
-{"id":"5","user_id":"2","barang_id":"17","jumlah":"1"},
-{"id":"6","user_id":"1","barang_id":"17","jumlah":"1"},
-{"id":"7","user_id":"1","barang_id":"6","jumlah":"1"}
-]
-}
-,{"type":"table","name":"migrations","database":"ci4","data":
-[
-{"id":"1","version":"2017-11-20-223112","class":"Myth\\Auth\\Database\\Migrations\\CreateAuthTables","group":"default","namespace":"Myth\\Auth","time":"1680743938","batch":"1"}
-]
-}
-,{"type":"table","name":"produk","database":"ci4","data":
-[
-{"id":"25","nama":"Nasi Goreng Pedas","slug":"nasi-goreng-pedas","deskripsi":"Nasi goreng adalah hidangan yang mudah dibuat dan dikonsumsi oleh banyak orang. Di Indonesia, nasi goreng selalu tersedia baik di warung tenda hingga restoran berbintang. Penikmat nasi goreng juga beragam dan tidak mengenal batas usia. Pada dasarnya, nasi goreng terdiri dari 3 aspek: nasi, bumbu, dan minyak¹. Penggunaan minyak untuk menggoreng berfungsi agar nasi tidak menggumpal serta memasak bahan-bahan lain¹. Biasanya, makanan ini disajikan dengan telur mata sapi dan timun segar¹. Nasi goreng terasi memiliki rasa yang kuat dan sedap. Terasi dibuat dari udang yang dihaluskan, dicampur dengan garam, dan difermentasi selama beberapa minggu sehingga menghasilkan pasta yang warnanya bervariasi dari coklat muda hingga coklat tua. Teksturnya juga berkisar dari lembut hingga keras","harga":"12000","gambar":"1681358414_3ee329c2d847393d9fb0.jpg","created_at":"2023-04-13 04:00:14","updated_at":"2023-04-13 04:00:14"},
-{"id":"26","nama":"Bakso MERCON","slug":"bakso-mercon","deskripsi":"Bakso adalah makanan khas Indonesia yang terbuat dari daging sapi giling dan tepung sagu. Bakso memiliki tekstur yang kenyal dan lembut, serta rasa yang gurih dan nikmat. Bakso biasanya disajikan dengan kuah kaldu sapi yang hangat dan segar, ditambah dengan mi, tahu, sayuran, dan sambal. Bakso cocok untuk dinikmati di segala cuaca dan suasana, baik sebagai makan siang, makan malam, atau camilan. Bakso juga mudah ditemukan di berbagai tempat, mulai dari pedagang kaki lima hingga restoran mewah. Bakso adalah salah satu makanan favorit masyarakat Indonesia yang tidak pernah membosankan.","harga":"15000","gambar":"1681358498_ca800cc4d07baf3732b4.jpg","created_at":"2023-04-13 04:01:38","updated_at":"2023-04-13 04:01:38"},
-{"id":"27","nama":"Mie Ayam Badil","slug":"mie-ayam-badil","deskripsi":"Mie ayam adalah makanan khas Tionghoa Indonesia yang terdiri dari mi kuning yang direbus dan dicampur dengan saus kecap manis, minyak ayam, dan bawang goreng. Mie ayam biasanya disajikan dengan potongan daging ayam yang dimasak dengan bumbu-bumbu rempah, ditambah dengan bakso, pangsit goreng atau rebus, acar timun, dan seledri. Mie ayam memiliki rasa yang manis, gurih, dan sedikit pedas, serta tekstur yang lembut dan kenyal. Mie ayam adalah makanan yang praktis dan murah meriah, cocok untuk sarapan, makan siang, atau makan malam. Mie ayam juga memiliki banyak variasi, seperti mie ayam jamur, mie ayam bakso, mie ayam ceker, dan lain-lain. Mie ayam adalah makanan yang disukai oleh semua kalangan, dari anak-anak hingga orang dewasa.","harga":"10000","gambar":"1681358565_3f9ffc4286fe33f27c4a.jpg","created_at":"2023-04-13 04:02:45","updated_at":"2023-04-13 04:02:45"}
-]
-}
-,{"type":"table","name":"users","database":"ci4","data":
-[
-{"id":"2","email":"rizhrizh24@gmail.com","username":"Rizh Rizh","password_hash":"$2y$10$czrq.2voySfgO1gkn33xle3BUhigk\/lu4kQr0ETGcoZQkAFvZpExK","reset_hash":null,"reset_at":null,"reset_expires":null,"activate_hash":null,"status":null,"status_message":null,"active":"1","force_pass_reset":"0","created_at":"2023-04-06 01:38:27","updated_at":"2023-04-06 01:38:27","deleted_at":null},
-{"id":"3","email":"zoke@gmail.com","username":"KOKO","password_hash":"$2y$10$7f7dwmEb0RoEmgLw2XRDYekUbWjmLqLVWtFlzOLvJwa6qMjv4HYlm","reset_hash":null,"reset_at":null,"reset_expires":null,"activate_hash":null,"status":null,"status_message":null,"active":"1","force_pass_reset":"0","created_at":"2023-04-06 02:29:45","updated_at":"2023-04-06 02:29:45","deleted_at":null},
-{"id":"4","email":"zokecoy@gmail.com","username":"ZOKO","password_hash":"$2y$10$4AKwkv.cZZ3zHy7hRkp2deglFN2v7eJv9pQxPy2f\/S0MxvcNu7lsW","reset_hash":null,"reset_at":null,"reset_expires":null,"activate_hash":null,"status":null,"status_message":null,"active":"1","force_pass_reset":"0","created_at":"2023-04-13 01:38:10","updated_at":"2023-04-13 01:38:10","deleted_at":null}
-]
-}
+    {
+        "type": "header",
+        "version": "5.2.0",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "ci4"
+    },
+    {
+        "type": "table",
+        "name": "auth_activation_attempts",
+        "database": "ci4",
+        "data": []
+    },
+    {
+        "type": "table",
+        "name": "auth_groups",
+        "database": "ci4",
+        "data": [
+            {
+                "id": "1",
+                "name": "admin",
+                "description": "Seorang admin yang berhak mengatur keseluruhan web"
+            },
+            {
+                "id": "2",
+                "name": "users",
+                "description": "pengguna yang hanya bisa menggunakan beberapa fitur dari web"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "auth_groups_permissions",
+        "database": "ci4",
+        "data": []
+    },
+    {
+        "type": "table",
+        "name": "auth_groups_users",
+        "database": "ci4",
+        "data": [
+            {
+                "group_id": "1",
+                "user_id": "2"
+            },
+            {
+                "group_id": "2",
+                "user_id": "3"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "auth_logins",
+        "database": "ci4",
+        "data": [
+            {
+                "id": "1",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": null,
+                "date": "2023-04-06 01:38:14",
+                "success": "0"
+            },
+            {
+                "id": "2",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-06 01:38:34",
+                "success": "1"
+            },
+            {
+                "id": "3",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-06 01:40:22",
+                "success": "1"
+            },
+            {
+                "id": "4",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-06 02:04:58",
+                "success": "1"
+            },
+            {
+                "id": "5",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-06 02:21:27",
+                "success": "1"
+            },
+            {
+                "id": "6",
+                "ip_address": "::1",
+                "email": "zoke@gmail.com",
+                "user_id": "3",
+                "date": "2023-04-06 02:29:57",
+                "success": "1"
+            },
+            {
+                "id": "7",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-06 02:48:29",
+                "success": "1"
+            },
+            {
+                "id": "8",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-12 03:24:26",
+                "success": "1"
+            },
+            {
+                "id": "9",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-13 01:34:50",
+                "success": "1"
+            },
+            {
+                "id": "10",
+                "ip_address": "::1",
+                "email": "zoke@gmail.com",
+                "user_id": null,
+                "date": "2023-04-13 01:37:21",
+                "success": "0"
+            },
+            {
+                "id": "11",
+                "ip_address": "::1",
+                "email": "zoke@gmail.com",
+                "user_id": null,
+                "date": "2023-04-13 01:37:49",
+                "success": "0"
+            },
+            {
+                "id": "12",
+                "ip_address": "::1",
+                "email": "zoke@gmail.com",
+                "user_id": null,
+                "date": "2023-04-13 01:37:55",
+                "success": "0"
+            },
+            {
+                "id": "13",
+                "ip_address": "::1",
+                "email": "zokecoy@gmail.com",
+                "user_id": "4",
+                "date": "2023-04-13 01:38:15",
+                "success": "1"
+            },
+            {
+                "id": "14",
+                "ip_address": "::1",
+                "email": "zokecoy@gmail.com",
+                "user_id": "4",
+                "date": "2023-04-13 01:38:41",
+                "success": "1"
+            },
+            {
+                "id": "15",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-13 02:00:04",
+                "success": "1"
+            },
+            {
+                "id": "16",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": null,
+                "date": "2023-04-13 02:18:31",
+                "success": "0"
+            },
+            {
+                "id": "17",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-13 02:18:52",
+                "success": "1"
+            },
+            {
+                "id": "18",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-13 03:21:11",
+                "success": "1"
+            },
+            {
+                "id": "19",
+                "ip_address": "::1",
+                "email": "rizhrizh24@gmail.com",
+                "user_id": "2",
+                "date": "2023-04-13 03:26:20",
+                "success": "1"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "auth_permissions",
+        "database": "ci4",
+        "data": []
+    },
+    {
+        "type": "table",
+        "name": "auth_reset_attempts",
+        "database": "ci4",
+        "data": []
+    },
+    {
+        "type": "table",
+        "name": "auth_tokens",
+        "database": "ci4",
+        "data": []
+    },
+    {
+        "type": "table",
+        "name": "auth_users_permissions",
+        "database": "ci4",
+        "data": []
+    },
+    {
+        "type": "table",
+        "name": "keranjang",
+        "database": "ci4",
+        "data": [
+            {
+                "id": "1",
+                "user_id": "2",
+                "barang_id": "1",
+                "jumlah": "0"
+            },
+            {
+                "id": "2",
+                "user_id": "2",
+                "barang_id": "1",
+                "jumlah": "0"
+            },
+            {
+                "id": "3",
+                "user_id": "2",
+                "barang_id": "1",
+                "jumlah": "0"
+            },
+            {
+                "id": "4",
+                "user_id": "2",
+                "barang_id": "6",
+                "jumlah": "1"
+            },
+            {
+                "id": "5",
+                "user_id": "2",
+                "barang_id": "17",
+                "jumlah": "1"
+            },
+            {
+                "id": "6",
+                "user_id": "1",
+                "barang_id": "17",
+                "jumlah": "1"
+            },
+            {
+                "id": "7",
+                "user_id": "1",
+                "barang_id": "6",
+                "jumlah": "1"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "migrations",
+        "database": "ci4",
+        "data": [
+            {
+                "id": "1",
+                "version": "2017-11-20-223112",
+                "class": "Myth\\Auth\\Database\\Migrations\\CreateAuthTables",
+                "group": "default",
+                "namespace": "Myth\\Auth",
+                "time": "1680743938",
+                "batch": "1"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "produk",
+        "database": "ci4",
+        "data": [
+            {
+                "id": "25",
+                "nama": "Nasi Goreng Pedas",
+                "slug": "nasi-goreng-pedas",
+                "deskripsi": "Nasi goreng adalah hidangan yang mudah dibuat dan dikonsumsi oleh banyak orang. Di Indonesia, nasi goreng selalu tersedia baik di warung tenda hingga restoran berbintang. Penikmat nasi goreng juga beragam dan tidak mengenal batas usia. Pada dasarnya, nasi goreng terdiri dari 3 aspek: nasi, bumbu, dan minyak¹. Penggunaan minyak untuk menggoreng berfungsi agar nasi tidak menggumpal serta memasak bahan-bahan lain¹. Biasanya, makanan ini disajikan dengan telur mata sapi dan timun segar¹. Nasi goreng terasi memiliki rasa yang kuat dan sedap. Terasi dibuat dari udang yang dihaluskan, dicampur dengan garam, dan difermentasi selama beberapa minggu sehingga menghasilkan pasta yang warnanya bervariasi dari coklat muda hingga coklat tua. Teksturnya juga berkisar dari lembut hingga keras",
+                "harga": "12000",
+                "gambar": "1681358414_3ee329c2d847393d9fb0.jpg",
+                "created_at": "2023-04-13 04:00:14",
+                "updated_at": "2023-04-13 04:00:14"
+            },
+            {
+                "id": "26",
+                "nama": "Bakso MERCON",
+                "slug": "bakso-mercon",
+                "deskripsi": "Bakso adalah makanan khas Indonesia yang terbuat dari daging sapi giling dan tepung sagu. Bakso memiliki tekstur yang kenyal dan lembut, serta rasa yang gurih dan nikmat. Bakso biasanya disajikan dengan kuah kaldu sapi yang hangat dan segar, ditambah dengan mi, tahu, sayuran, dan sambal. Bakso cocok untuk dinikmati di segala cuaca dan suasana, baik sebagai makan siang, makan malam, atau camilan. Bakso juga mudah ditemukan di berbagai tempat, mulai dari pedagang kaki lima hingga restoran mewah. Bakso adalah salah satu makanan favorit masyarakat Indonesia yang tidak pernah membosankan.",
+                "harga": "15000",
+                "gambar": "1681358498_ca800cc4d07baf3732b4.jpg",
+                "created_at": "2023-04-13 04:01:38",
+                "updated_at": "2023-04-13 04:01:38"
+            },
+            {
+                "id": "27",
+                "nama": "Mie Ayam Badil",
+                "slug": "mie-ayam-badil",
+                "deskripsi": "Mie ayam adalah makanan khas Tionghoa Indonesia yang terdiri dari mi kuning yang direbus dan dicampur dengan saus kecap manis, minyak ayam, dan bawang goreng. Mie ayam biasanya disajikan dengan potongan daging ayam yang dimasak dengan bumbu-bumbu rempah, ditambah dengan bakso, pangsit goreng atau rebus, acar timun, dan seledri. Mie ayam memiliki rasa yang manis, gurih, dan sedikit pedas, serta tekstur yang lembut dan kenyal. Mie ayam adalah makanan yang praktis dan murah meriah, cocok untuk sarapan, makan siang, atau makan malam. Mie ayam juga memiliki banyak variasi, seperti mie ayam jamur, mie ayam bakso, mie ayam ceker, dan lain-lain. Mie ayam adalah makanan yang disukai oleh semua kalangan, dari anak-anak hingga orang dewasa.",
+                "harga": "10000",
+                "gambar": "1681358565_3f9ffc4286fe33f27c4a.jpg",
+                "created_at": "2023-04-13 04:02:45",
+                "updated_at": "2023-04-13 04:02:45"
+            }
+        ]
+    },
+    {
+        "type": "table",
+        "name": "users",
+        "database": "ci4",
+        "data": [
+            {
+                "id": "2",
+                "email": "rizhrizh24@gmail.com",
+                "username": "Rizh Rizh",
+                "password_hash": "$2y$10$czrq.2voySfgO1gkn33xle3BUhigk\/lu4kQr0ETGcoZQkAFvZpExK",
+                "reset_hash": null,
+                "reset_at": null,
+                "reset_expires": null,
+                "activate_hash": null,
+                "status": null,
+                "status_message": null,
+                "active": "1",
+                "force_pass_reset": "0",
+                "created_at": "2023-04-06 01:38:27",
+                "updated_at": "2023-04-06 01:38:27",
+                "deleted_at": null
+            },
+            {
+                "id": "3",
+                "email": "zoke@gmail.com",
+                "username": "KOKO",
+                "password_hash": "$2y$10$7f7dwmEb0RoEmgLw2XRDYekUbWjmLqLVWtFlzOLvJwa6qMjv4HYlm",
+                "reset_hash": null,
+                "reset_at": null,
+                "reset_expires": null,
+                "activate_hash": null,
+                "status": null,
+                "status_message": null,
+                "active": "1",
+                "force_pass_reset": "0",
+                "created_at": "2023-04-06 02:29:45",
+                "updated_at": "2023-04-06 02:29:45",
+                "deleted_at": null
+            },
+            {
+                "id": "4",
+                "email": "zokecoy@gmail.com",
+                "username": "ZOKO",
+                "password_hash": "$2y$10$4AKwkv.cZZ3zHy7hRkp2deglFN2v7eJv9pQxPy2f\/S0MxvcNu7lsW",
+                "reset_hash": null,
+                "reset_at": null,
+                "reset_expires": null,
+                "activate_hash": null,
+                "status": null,
+                "status_message": null,
+                "active": "1",
+                "force_pass_reset": "0",
+                "created_at": "2023-04-13 01:38:10",
+                "updated_at": "2023-04-13 01:38:10",
+                "deleted_at": null
+            }
+        ]
+    }
 ]

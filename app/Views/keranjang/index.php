@@ -18,7 +18,7 @@
                 <?php foreach ($produk as $p) : ?>
                     <tbody>
                         <tr>
-                            <th scope="row"><?php $no++; ?></th>
+                            <th scope="row"><a href="/hapus"></a></th>
                             <td><img src="/img/<?= $p['gambar']; ?>"></td>
                             <td><?= $p['nama']; ?></td>
                             <td><?= $p['deskripsi']; ?></td>
