@@ -7,20 +7,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/"><i class="fa-solid fa-house"></i> Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about"><i class="fa-solid fa-address-card"></i> About Us</a>
+                    <a class="nav-link" href="/about">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact"><i class="fa-solid fa-address-book"></i> Contact Us</a>
+                    <a class="nav-link" href="/contact">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/produk"><i class="fa-solid fa-print"></i> Produk</a>
+                    <a class="nav-link" href="/produk">Produk</a>
                 </li>
                 <?php if (logged_in()) : ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="/keranjang"><i class="fa-solid fa-cart-shopping"></i> Keranjang <!--<span class="badge text-bg-secondary">0</span> --></a>
+                        <a class="nav-link" href="/keranjang">keranjang <!--<span class="badge text-bg-secondary">0</span> --></a>
                     </li>
                 <?php endif; ?>
             </ul>
@@ -32,7 +32,7 @@
                 </li>
                 <li class="navbar-item">
                     <?php if (in_groups("users")) : ?>
-                        <a href="/transaksi" class="nav-link mx-1"><i class="fa-solid fa-user"></i> Transaksi</a>
+                        <a href="/transaksi" class="nav-link mx-1">Transaksi Anda</a>
                     <?php endif; ?>
                 </li>
                 <li class="nav-item">

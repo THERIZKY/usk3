@@ -7,14 +7,8 @@
             <h2 class="mt-4 text-center">
                 Dashboard Admin
             </h2>
-
-            <?php if (session()->getFlashdata('pesan')) : ?>
-                <div class="alert alert-success" role="alert">
-                    <?= session()->getFlashdata('pesan'); ?>
-                </div>
-            <?php endif; ?>
-
             <div class="d-flex justify-content-center gap-5 my-5">
+
                 <!-- Card Buat List Barang -->
                 <div class="card" style="width: 18rem;">
                     <div class="card-body text-center">
@@ -33,7 +27,7 @@
                     </div>
                 </div>
 
-                <!-- Card buat konfirmasi transaksi -->
+                <!-- !PLAN! Card buat konfirmasi transaksi -->
                 <div class="card" style="width: 18rem;">
                     <div class="card-body text-center">
                         <h5 class="card-title fw-bold">Konfirmasi Transaksi</h5>

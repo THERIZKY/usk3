@@ -52,18 +52,6 @@ class Admin extends BaseController
         return view('admin/konfirmasi/konfirm_barang', $data);
     }
 
-    public function confirm()
-    {
-        $idTransaksi = $this->request->getVar('idTransaksi');
-
-        $this->transaksiModel->update($idTransaksi, ['status_pemesanan' => 'diproses']);
-        $this->konfirmasiModel->where(['id_transaksi' => $idTransaksi])->delete();
-
-        session()->setFlashdata('pesan', 'Berhasil Mengkonfirmasi!');
-        return redirect()->to('/admin/list-transaksi');
-    }
-
-
     /* Method Untuk Masuk Ke List Barang */
     public function list()
     {

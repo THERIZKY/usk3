@@ -25,10 +25,7 @@
                                 <?php if ($t['status_pemesanan'] != 'menunggu konfirmasi') : ?>
                                     <p class="fw-bold">Sudah Di Konfirmasi</p>
                                 <?php else : ?>
-                                    <form action="/admin/confirm" method="post">
-                                        <input type="hidden" name="idTransaksi" value="<?= $t['id_transaksi']; ?>">
-                                        <button class="btn btn-primary"><i class="fa-solid fa-check"></i></button>
-                                    </form>
+
                                 <?php endif; ?>
                             </td>
                         </tr>

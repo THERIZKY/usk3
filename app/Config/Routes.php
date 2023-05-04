@@ -66,7 +66,7 @@ $routes->post('/admin/produk/save', 'Admin::save',  ['filter' => 'role:admin', '
 $routes->post('/admin/produk/update/(:num)', 'Admin::update/$1',  ['filter' => 'role:admin', 'login']);
 $routes->post('/checkout/done', 'Checkout::transaction');
 $routes->post('/admin/list-transaksi/ChangeStatus/(:num)', 'Admin::ChangeStatus/$1', ['filter' => 'role:admin', 'login']);
-$routes->post('/admin/confirm', 'Admin::confirm');
+
 /* Routes Test Buat Groups */
 
 

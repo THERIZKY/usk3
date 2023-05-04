@@ -88,7 +88,7 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
 
-        // Produk Buat Di navbar 
+        // Produk Buat Di navbar
         $produk = $this->keranjangModel->findAll;
     }
 }
