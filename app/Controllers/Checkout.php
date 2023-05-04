@@ -15,7 +15,7 @@ class Checkout extends BaseController
 
 
         $data = [
-            'title' => 'Checkout Barang Anda || Rizhura Cafe',
+            'title' => 'Checkout Barang Anda || Rizhura Computer',
             'subtotal' => $total,
             'ongkir' => 9000
         ];
@@ -30,16 +30,20 @@ class Checkout extends BaseController
         $no_kartu = $this->request->getPost('credit-card');
         $totalBayar = $this->request->getPost('bayar');
 
-        $this->transaksiModel->save([
+        $id_transaksi = $this->transaksiModel->insert([
             'nama_lengkap' => $nama,
             'alamat' => $alamat,
             'user_id' => user_id(),
             'no_kartu' => $no_kartu,
             'total' => $totalBayar,
-            'status_pemesanan' => 'diproses'
+            'status_pemesanan' => 'menunggu konfirmasi'
         ]);
 
-        $this->builder->delete(['user_id' => user_id()]);
+        $this->builder->where('user_id', user_id())->delete();
+        $this->konfirmasiModel->insert([
+            'id_transaksi' => $id_transaksi,
+            'id_user' => user_id(),
+        ]);
 
         return redirect()->to('/transaksi');
     }

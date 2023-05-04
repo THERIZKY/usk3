@@ -13,6 +13,7 @@ use Psr\Log\LoggerInterface;
 use App\Models\produkModel;
 use App\Models\keranjangModel;
 use App\Models\TransaksiModel;
+use App\Models\Konfirmasi;
 
 /* Config Yang Dipakai */
 use Config\Validation;
@@ -59,6 +60,7 @@ abstract class BaseController extends Controller
     protected $keranjangModel;
     protected $validation;
     protected $transaksiModel;
+    protected $konfirmasiModel;
     /**
      * Constructor.
      */
@@ -79,11 +81,14 @@ abstract class BaseController extends Controller
         $this->keranjangModel = new KeranjangModel();
         $this->produkModel = new produkModel();
         $this->transaksiModel = new TransaksiModel();
-
+        $this->konfirmasiModel = new Konfirmasi();
         /* Inisialisasi Config */
         $this->validation = new Validation();
 
 
         // E.g.: $this->session = \Config\Services::session();
+
+        // Produk Buat Di navbar
+        $produk = $this->keranjangModel->findAll;
     }
 }

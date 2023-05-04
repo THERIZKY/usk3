@@ -5,27 +5,36 @@
     <div class="row justify-content-md-center">
         <div class="col-12">
             <h2 class="mt-4 text-center">
-                Daftar Printer Kami
+                Dashboard Admin
             </h2>
-            <?php if (session()->getFlashdata('pesan')) : ?>
-                <div class="alert alert-success" role="alert">
-                    <?= session()->getFlashdata('pesan'); ?>
-                </div>
-            <?php endif; ?>
-            <a href="/admin/produk/tambah" class="btn btn-primary my-3">Tambah Data</a>
-            <div class="d-flex flex-wrap gap-5 mb-5 mt-2">
-                <?php foreach ($produk as $p) : ?>
-                    <div class="card py-4" style="width: 18rem;">
-                        <img src="/img/<?= $p['gambar']; ?>" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"><?= $p['nama']; ?></h5>
-                            <p class="card-text"><?= $p['deskripsi']; ?></p>
-                        </div>
-                        <div class="text-center">
-                            <a href="/admin/produk/<?= $p['slug']; ?>" class="btn btn-primary">Lebih Lanjut</a>
-                        </div>
+            <div class="d-flex justify-content-center gap-5 my-5">
+
+                <!-- Card Buat List Barang -->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">List Barang Gudang</h5>
+                        <p class="card-text">Hak Akses Untuk Mengatur Semua Barang Yang Tersedia</p>
+                        <a href="/admin/list-barang" class="btn btn-primary">Atur List Barang</a>
                     </div>
-                <?php endforeach; ?>
+                </div>
+
+                <!-- Card Buat List Transaksi -->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">List Transaksi</h5>
+                        <p class="card-text">Hak Akses Untuk Mengatur Status Pemesanan User</p>
+                        <a href="/admin/list-transaksi" class="btn btn-primary">Atur List Transaksi</a>
+                    </div>
+                </div>
+
+                <!-- !PLAN! Card buat konfirmasi transaksi -->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Konfirmasi Transaksi</h5>
+                        <p class="card-text">Hak Akses Untuk Mengkonfirmasi Pembayaran Dan pesan user</p>
+                        <a href="/admin/konfirmasi" class="btn btn-primary">Konfirmasi Transaksi</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-dark-subtle">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/" style="font-weight: bold; font-family: 'Poppins', sans-serif;">Rizhura Cafe</a>
+        <a class="navbar-brand" href="/" style="font-weight: bold; font-family: 'Poppins', sans-serif;">Rizhura Computer</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,22 +18,31 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/produk">Produk</a>
                 </li>
+                <?php if (logged_in()) : ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/keranjang">keranjang <!--<span class="badge text-bg-secondary">0</span> --></a>
+                    </li>
+                <?php endif; ?>
+            </ul>
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/keranjang">keranjang</a>
+                    <?php if (in_groups("admin")) : ?>
+                        <a href="/admin" class="nav-link mx-3"><i class="fa-solid fa-lock"></i> Dashboard Admin</a>
+                    <?php endif; ?>
+                </li>
+                <li class="navbar-item">
+                    <?php if (in_groups("users")) : ?>
+                        <a href="/transaksi" class="nav-link mx-1">Transaksi Anda</a>
+                    <?php endif; ?>
+                </li>
+                <li class="nav-item">
+                    <?php if (logged_in()) : ?>
+                        <a href="/logout" class="nav-link mx-1"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                    <?php else : ?>
+                        <a href="/login" class="nav-link mx-1"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                    <?php endif; ?>
                 </li>
             </ul>
-            <?php if (in_groups("admin")) : ?>
-                <a href="/admin" class="nav-link mx-3"><i class="fa-solid fa-lock"></i> Dashboard Admin</a>
-                <a href="/admin/AllTransaksi" class="nav-link mx-3">List Transaksi</a>
-            <?php endif; ?>
-            <?php if (logged_in()) : ?>
-                <?php if (in_groups("users")) : ?>
-                    <a href="/transaksi" class="nav-link mx-1">Transaksi Anda</a>
-                <?php endif; ?>
-                <a href="/logout" class="nav-link mx-4"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
-            <?php else : ?>
-                <a href="/login" class="nav-link mx-3"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
-            <?php endif; ?>
         </div>
     </div>
 </nav>

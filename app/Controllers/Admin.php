@@ -5,32 +5,71 @@ namespace App\Controllers;
 
 class Admin extends BaseController
 {
+    protected $builder;
+    protected $db;
+
+    public function __construct()
+    {
+        $this->db = \Config\Database::connect();
+        $this->builder = $this->db->table('transaksi');
+    }
+
+    /* buat Masuk dashboard admin */
     public function index()
     {
-        $produk = $this->produkModel->getProduk();
         $data = [
-            'title' => 'Daftar Produk || Rizhura Cafe',
-            'produk' => $produk
+            'title' => 'Dashboard Admin || Rizhura Computer',
         ];
         return view('admin/index', $data);
     }
+
+
+    //Untuk Halaman Detail
     public function detail($slug)
     {
         $produk = $this->produkModel->getProduk($slug);
         $data = [
-            'title' => 'Detail Produk || Rizhura Cafe',
+            'title' => 'Detail Produk || Rizhura Computer',
             'produk' => $produk
         ];
 
         return view('admin/detail', $data);
     }
 
-    /* Method Yang Berurusan Dengan Transaksi */
+    /* Untuk Konfirmasi Barang */
+    public function konfirmasi()
+    {
+        $query = $this
+            ->db
+            ->query("SELECT * FROM konfirmasi JOIN transaksi ON konfirmasi.id_transaksi = transaksi.id;");
+
+        $transaksi = $query->getResultArray();
+        $data = [
+            'title' => 'Konfirmasi Transaksi',
+            'transaksi' => $transaksi
+        ];
+
+        return view('admin/konfirmasi/konfirm_barang', $data);
+    }
+
+    /* Method Untuk Masuk Ke List Barang */
+    public function list()
+    {
+        $produk = $this->produkModel->getProduk();
+        $data = [
+            'title' => 'Daftar Produk || Rizhura Computer',
+            'produk' => $produk
+        ];
+        return view('admin/list_barang/list', $data);
+    }
+
+
+    /* Method Untuk Masuk Ke List Transaksi */
     public function AllTransaksi()
     {
         $transaksi = $this->transaksiModel->findAll();
         $data = [
-            'title' => 'List Transaksi || Rizhura Cafe',
+            'title' => 'List Transaksi || Rizhura Computer',
             'transaksi' => $transaksi
         ];
 
@@ -48,7 +87,7 @@ class Admin extends BaseController
         $this->transaksiModel->update($idTransaksi, ['status_pemesanan' => $status_pemesanan]);
 
         session()->setFlashdata('pesan', 'Status Pemesanan Berhasil Dirubah');
-        return redirect()->to('/admin/AllTransaksi');
+        return redirect()->to('/admin/list-transaksi');
     }
 
 
@@ -57,7 +96,7 @@ class Admin extends BaseController
     public function tambah()
     {
         $data = [
-            'title' => 'Tambah Produk || Rizhura Cafe'
+            'title' => 'Tambah Produk || Rizhura Computer'
         ];
         return view('admin/tambah', $data);
     }
@@ -111,7 +150,7 @@ class Admin extends BaseController
     public function edit($slug)
     {
         $data = [
-            'title' => 'Ubah Data Produk || Rizhura Cafe',
+            'title' => 'Ubah Data Produk || Rizhura Computer',
             'produk' => $this->produkModel->getProduk($slug)
         ];
 

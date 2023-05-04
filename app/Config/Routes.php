@@ -57,13 +57,15 @@ $routes->get('/admin/produk/tambah', 'Admin::tambah', ['filter' => 'role:admin',
 $routes->get('/admin/produk/edit/(:segment)', 'Admin::edit/$1', ['filter' => 'role:admin', 'login']);
 $routes->delete('/admin/produk/(:num)', 'Admin::hapus/$1');
 $routes->get('/admin/produk/(:any)', 'Admin::detail/$1', ['filter' => 'role:admin', 'login']);
-$routes->get('/admin/AllTransaksi', 'Admin::AllTransaksi', ['filter' => 'role:admin', 'login']);
+$routes->get('/admin/list-barang', 'Admin::list', ['filter' => 'role:admin', 'login']);
+$routes->get('/admin/list-transaksi', 'Admin::AllTransaksi', ['filter' => 'role:admin', 'login']);
+$routes->get('/admin/konfirmasi', 'Admin::konfirmasi', ['filter' => 'role:admin', 'login']);
 
 // Untuk form
 $routes->post('/admin/produk/save', 'Admin::save',  ['filter' => 'role:admin', 'login']);
 $routes->post('/admin/produk/update/(:num)', 'Admin::update/$1',  ['filter' => 'role:admin', 'login']);
 $routes->post('/checkout/done', 'Checkout::transaction');
-$routes->post('/admin/AllTransaksi/ChangeStatus/(:num)', 'Admin::ChangeStatus/$1', ['filter' => 'role:admin', 'login']);
+$routes->post('/admin/list-transaksi/ChangeStatus/(:num)', 'Admin::ChangeStatus/$1', ['filter' => 'role:admin', 'login']);
 
 /* Routes Test Buat Groups */
 

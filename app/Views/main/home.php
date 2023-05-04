@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center my-3">
         <div class="col-7">
-            <h2 class="text-center">Welcome To Rizhura Cafe</h2>
+            <h2 class="text-center">Welcome To Rizhura Computer</h2>
             <div id="carouselExample" class="carousel slide my-5">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

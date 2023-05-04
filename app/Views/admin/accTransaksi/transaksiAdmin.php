@@ -43,7 +43,7 @@
                                     <?= $p['status_pemesanan']; ?>
                                 </td>
                                 <td>
-                                    <form action="/admin/AllTransaksi/ChangeStatus/<?= $p['id']; ?>" method="post">
+                                    <form action="/admin/list-transaksi/ChangeStatus/<?= $p['id']; ?>" method="post">
                                         <input type="hidden" name="oldStatus" value="<?php echo $p['status_pemesanan']; ?>">
                                         <select name="status_pemesanan" id="status_pemesanan">
                                             <option value="diproses">Diproses</option>
