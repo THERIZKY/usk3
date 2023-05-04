@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col">
             <h1 class="text-center m-4" style="text-transform: uppercase; font-weight: 600;">List Barang Yang Kami Sediakan</h1>
-            <div class="d-flex flex-wrap gap-5 mb-5 mt-2">
+            <div class="d-flex flex-wrap gap-3 mb-4 mt-2">
                 <?php foreach ($produk as $p) : ?>
                     <div class="card py-4" style="width: 18rem;">
                         <img src="/img/<?= $p['gambar']; ?>" class="card-img-top" alt="...">

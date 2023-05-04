@@ -2,8 +2,8 @@
 
 <?= $this->Section('content'); ?>
 <div class="container">
-    <div class="row d-flex justify-content-center">
-        <div class="col-10">
+    <div class="row d-flex justify-content-center mb-xs-3 mb-sm-5 mb-xl-4 mb-xxl-2">
+        <div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 col-xl-9 col-xxl-8">
             <?php if (session()->getFlashdata('pesan')) : ?>
                 <div class="alert alert-success my-5" role="alert">
                     <?= session()->getFlashdata('pesan'); ?>
@@ -43,15 +43,19 @@
                                     <?= $p['status_pemesanan']; ?>
                                 </td>
                                 <td>
-                                    <form action="/admin/list-transaksi/ChangeStatus/<?= $p['id']; ?>" method="post">
-                                        <input type="hidden" name="oldStatus" value="<?php echo $p['status_pemesanan']; ?>">
-                                        <select name="status_pemesanan" id="status_pemesanan">
-                                            <option value="diproses">Diproses</option>
-                                            <option value="dalam_perjalanan">Dalam Perjalanan</option>
-                                            <option value="selesai">Selesai</option>
-                                        </select>
-                                        <button type="submit" class="btn">Ubah Status</button>
-                                    </form>
+                                    <?php if ($p['status_pemesanan'] == 'menunggu konfirmasi') : ?>
+                                        <a href="/admin/konfirmasi" class="btn btn-warning">Konfirmasi Dahulu Disini</a>
+                                    <?php else : ?>
+                                        <form action="/admin/list-transaksi/ChangeStatus/<?= $p['id']; ?>" method="post">
+                                            <input type="hidden" name="oldStatus" value="<?php echo $p['status_pemesanan']; ?>">
+                                            <select name="status_pemesanan" id="status_pemesanan" class="form-select">
+                                                <option value="diproses">Diproses</option>
+                                                <option value="dalam_perjalanan">Dalam Perjalanan</option>
+                                                <option value="selesai">Selesai</option>
+                                            </select>
+                                            <button type="submit" class="btn text-center">Ubah Status</button>
+                                        </form>
+                                    <?php endif; ?>
                                 </td>
                             </tr>
                         </tbody>
